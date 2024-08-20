@@ -16,17 +16,17 @@ module.exports = {
 		rules: [
 			{
 				test: /\.css$/,
-				use: ['style-loader', 'css-loader'], // Correctly configured CSS loaders
+				use: ['style-loader', 'css-loader'],
 			},
 			{
 				test: /\.(gif|svg|png|jpg|jpeg)$/i,
 				type: 'asset/resource',
 				use: [
 					{
-						loader: 'file-loader', // Use file-loader first
+						loader: 'file-loader',
 					},
 					{
-						loader: 'image-webpack-loader', // Use image-webpack-loader after
+						loader: 'image-webpack-loader',
 						options: {
 							bypassOnDebug: true,
 							disable: true,
